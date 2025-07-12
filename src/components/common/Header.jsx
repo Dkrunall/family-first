@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#4444444d] shadow-md rounded-[20px] p-3 sm:p-4 lg:p-6 mx-2 sm:mx-4 lg:mx-[30px]">
-      <div className="flex flex-row justify-between items-center w-full max-w-7xl mx-auto">
+      <div className="flex flex-row justify-between items-center w-full">
         {/* Logo and Brand */}
         <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-shrink-0">
           <img 
@@ -45,7 +45,7 @@ const Header = () => {
           <Button 
             variant="secondary" 
             size="sm"
-            className="font-semibold bg-[linear-gradient(54deg,#e9866e_0%,#959189_50%,#4a9ca5_100%)] whitespace-nowrap"
+            className="font-semibold bg-[linear-gradient(54deg,#e9866e_0%,#959189_50%,#4a9ca5_100%)] whitespace-nowrap w-32"
           >
             Login
           </Button>
