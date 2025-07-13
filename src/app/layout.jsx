@@ -6,11 +6,11 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Next.js with Tailwind CSS',
-  description: 'A boilerplate project with Next.js 15 and Tailwind CSS 3.4.17',
+  title: 'Family First',
+  description: 'Protect Their World. Control It Silently.',
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/fav.png', type: 'image/png', sizes: '32x32' }
     ],
   },
 };

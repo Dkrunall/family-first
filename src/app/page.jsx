@@ -289,7 +289,7 @@ const FamilyFirstLandingPage = () => {
             <img
               src="/images/img_group_43_1.png"
               alt="Family using device"
-              className="absolute left-0 top-0 w-[200px] sm:w-[300px] md:w-[400px] lg:w-[632px] h-[200px] sm:h-[300px] md:h-[400px] lg:h-[440px] object-cover rounded-l-[20px] sm:rounded-l-[32px]"
+              className="absolute left-0 top-0 w-auto h-auto object-cover rounded-l-[20px] sm:rounded-l-[32px]"
             />
             {/* Content */}
             <div className="relative z-10 ml-auto max-w-full sm:max-w-[500px] lg:max-w-[472px] mt-[220px] sm:mt-0">
