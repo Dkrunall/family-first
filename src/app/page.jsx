@@ -66,7 +66,7 @@ const FeaturesGrid = () => {
     <section className="w-full mb-8 sm:mb-12 pt-8">
       <div
         ref={gridRef}
-        className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] px-4 sm:px-6 lg:px-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide overflow-hidden h-[320px]"
+        className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] px-4 sm:px-6 lg:px-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide !overflow-hidden h-[320px]"
       >
         {features.map((feature, index) => {
           const isHighlighted = index === highlightedIndex;
