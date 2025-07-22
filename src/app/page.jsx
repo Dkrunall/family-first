@@ -66,14 +66,14 @@ const FeaturesGrid = () => {
     <section className="w-full mb-8 sm:mb-12 pt-8">
       <div
         ref={gridRef}
-        className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] px-4 sm:px-6 lg:px-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide !overflow-hidden h-[320px]"
+        className="flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-[52px] px-4 sm:px-6 lg:px-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide !overflow-hidden min-h-[320px]"
       >
         {features.map((feature, index) => {
           const isHighlighted = index === highlightedIndex;
           return (
             <div
               key={feature.title}
-              className={`snap-center relative flex flex-col items-center p-4 sm:p-6 lg:p-[26px] rounded-[20px] sm:rounded-[24px] transition-all duration-500 ease-in-out flex-shrink-0 min-h-[250px] ${
+              className={`snap-center relative flex flex-col items-center p-4 sm:p-6 lg:p-[26px] rounded-[20px] sm:rounded-[24px] transition-all duration-500 ease-in-out flex-shrink-0 min-h-[240px] sm:min-h-[220px] ${
                 isHighlighted
                   ? 'w-[200px] sm:w-[240px] md:w-[280px] lg:w-[304px] bg-gradient-to-br from-[#00d7ff]/20 to-[#929292]/20 scale-105 shadow-lg'
                   : 'w-[180px] sm:w-[220px] md:w-[240px] lg:w-[280px] bg-global-6'
@@ -121,7 +121,7 @@ const FeaturesGrid = () => {
                 <img
                   src="/images/sliderpri.png"
                   alt="Location indicator"
-                  className="w-full h-full object-contain absolute bottom-[-26%] left-0 right-0"
+                  className="w-full h-full object-contain absolute bottom-[-30%] sm:bottom-[-26%] left-0 right-0"
                 />
               )}
             </div>
@@ -159,7 +159,7 @@ const FamilyFirstLandingPage = () => {
       <main className="flex flex-col items-center min-h-screen bg-black">
         {/* Hero Section */}
         <section
-          className="relative flex flex-col items-center w-full max-w-[1381px] mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-18 h-[90vh]"
+          className="relative flex flex-col items-center w-full max-w-[1381px] mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-32 pb-12 sm:pb-18 min-h-[60vh] sm:min-h-[90vh]"
           style={{
             transform: `translate3d(0, ${offset * 0.5}px, 0)`,
             willChange: 'transform',
@@ -178,18 +178,18 @@ const FamilyFirstLandingPage = () => {
           />
           <div className="relative flex flex-col items-center gap-8 text-center z-10">
             {/* Hero Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-bold leading-tight text-center max-w-4xl bg-gradient-to-r from-[#E9866E] via-[#959189] to-[#4A9CA5] bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-5xl lg:text-[64px] font-bold leading-tight text-center max-w-4xl bg-gradient-to-r from-[#E9866E] via-[#959189] to-[#4A9CA5] bg-clip-text text-transparent">
               Protect Their World.
               <br />
               Control It Silently.
             </h1>
             {/* Hero Description */}
-            <p className="text-base sm:text-lg lg:text-xl font-normal text-[#959189] text-center max-w-2xl">
+            <p className="text-sm sm:text-lg lg:text-xl font-normal text-[#959189] text-center max-w-2xl px-4 sm:px-0">
               With Family First, parents get complete control of their child's device—without the
               child ever knowing.
             </p>
             {/* Hero Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-6 w-full max-w-md">
+            <div className="flex flex-row items-center justify-center gap-3 mt-6 w-full max-w-md">
               <Button
                 variant="primary"
                 size="lg"
@@ -208,7 +208,7 @@ const FamilyFirstLandingPage = () => {
           </div>
         </section>
         {/* Phone Mockup Section */}
-        <section className="pb-32 bg-black relative w-full max-w-[1381px] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <section className="pb-16 sm:pb-24 lg:pb-32 bg-black relative w-full max-w-[1381px] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
           {/* Background Images */}
           <div className="flex justify-center relative z-10">
             <img
@@ -229,10 +229,10 @@ const FamilyFirstLandingPage = () => {
         <section className="relative w-full pb-32">
           {/* Background with overlay */}
           <div
-            className="w-full min-h-[600px] sm:min-h-[800px] lg:min-h-[900px] bg-cover bg-center bg-no-repeat rounded-b-[160px] sm:rounded-b-[240px] lg:rounded-b-[320px] relative"
+            className="w-full min-h-[500px] sm:min-h-[700px] lg:min-h-[900px] bg-cover bg-center bg-no-repeat rounded-b-[100px] sm:rounded-b-[240px] lg:rounded-b-[320px] relative"
             style={{ backgroundImage: 'url(/images/img_boy3360415_2.png)' }}
           >
-            <div className="absolute inset-0 bg-[linear-gradient(19deg,#00d7ff21_0%,#08080800_50%,#000000a0_100%)] rounded-b-[160px] sm:rounded-b-[240px] lg:rounded-b-[320px]"></div>
+            <div className="absolute inset-0 bg-[linear-gradient(19deg,#00d7ff21_0%,#08080800_50%,#000000a0_100%)] rounded-b-[100px] sm:rounded-b-[240px] lg:rounded-b-[320px]"></div>
             <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 lg:pt-14">
               {/* Background Element */}
               <h2 className="text-2xl sm:text-3xl lg:text-[40px] font-bold leading-tight lg:leading-[48px] text-global-4 text-center mb-6 sm:mb-8">
@@ -336,7 +336,7 @@ const FamilyFirstLandingPage = () => {
 
         {/* Key Features Section */}
         <section className="w-full max-w-[1381px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-global-4 rounded-[22px] text-center mb-12 sm:mb-16 lg:mb-20 overflow-hidden h-[600px]">
+          <div className="relative bg-global-4 rounded-[22px] text-center mb-12 sm:mb-16 lg:mb-20 overflow-hidden h-[400px] sm:h-[500px] lg:h-[600px]">
             {/* Background Image */}
             <img
               src="/images/demo.png"
@@ -346,7 +346,7 @@ const FamilyFirstLandingPage = () => {
             {/* Progress Indicator */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex justify-center">
               <div className="w-full max-w-[544px] h-[6px] bg-global-5 rounded-[3px] relative">
-                <div className="w-[110px] h-[6px] bg-global-2 rounded-[3px]"></div>
+                <div className="hidden sm:block w-[110px] h-[6px] bg-global-2 rounded-[3px]"></div>
               </div>
             </div>
           </div>
@@ -354,7 +354,7 @@ const FamilyFirstLandingPage = () => {
 
         {/* Why Parents Choose Section */}
         <section className="w-full max-w-[1381px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-[linear-gradient(45deg,#e9866e_0%,#959189_50%,#00000000_100%)] rounded-[20px] sm:rounded-[32px] p-6 sm:p-8 lg:p-[44px] overflow-hidden">
+          <div className="relative bg-[linear-gradient(45deg,#e9866e_0%,#959189_50%,#00000000_100%)] rounded-[20px] sm:rounded-[32px] p-8 sm:p-8 lg:p-[44px] min-h-[500px] sm:min-h-[400px] overflow-hidden">
             {/* Background Image */}
             <img
               src="/images/img_group_43_1.png"
@@ -362,7 +362,7 @@ const FamilyFirstLandingPage = () => {
               className="absolute left-0 top-0 w-auto h-auto object-cover rounded-l-[20px] sm:rounded-l-[32px]"
             />
             {/* Content */}
-            <div className="relative z-10 ml-auto max-w-full sm:max-w-[500px] lg:max-w-[472px] mt-[220px] sm:mt-0">
+            <div className="relative z-10 ml-auto max-w-full sm:max-w-[500px] lg:max-w-[472px] mt-[300px] sm:mt-0">
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] font-bold leading-tight lg:leading-[44px] text-global-4 mb-6 sm:mb-8 lg:mb-[56px]">
                 Why Parents Choose Family First
               </h2>

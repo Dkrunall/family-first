@@ -98,7 +98,7 @@ const Header = () => {
           <Button 
             variant="secondary" 
             size="sm"
-            className="font-semibold bg-[linear-gradient(54deg,#e9866e_0%,#959189_50%,#4a9ca5_100%)] mt-2"
+            className="font-semibold bg-[linear-gradient(54deg,#e9866e_0%,#959189_50%,#4a9ca5_100%)] mt-2 w-40"
           >
             Login
           </Button>
