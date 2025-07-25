@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -78,8 +79,8 @@ const Footer = () => {
                 </span>
               </div>
 
-              {/* Social Media Icons */}
-              <div className="flex items-center gap-4">
+              {/* Social Media Icons - Hidden */}
+              {/* <div className="flex items-center gap-4">
                 <a href="#instagram" className="hover:opacity-80 transition-opacity">
                   <img 
                     src="/images/img_instagram.svg" 
@@ -108,7 +109,7 @@ const Footer = () => {
                     className="w-6 h-6"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Additional Icon */}
@@ -132,24 +133,12 @@ const Footer = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-            <a 
-              href="#privacy" 
+            <Link 
+              href="/privacy-policy" 
               className="text-global-4 text-sm sm:text-base leading-tight sm:leading-[22px] font-['Satoshi'] hover:opacity-80 transition-opacity"
             >
               Privacy Policy
-            </a>
-            <a 
-              href="#terms" 
-              className="text-global-4 text-sm sm:text-base leading-tight sm:leading-[22px] font-['Satoshi'] hover:opacity-80 transition-opacity"
-            >
-              Terms of Service
-            </a>
-            <a 
-              href="#cookies" 
-              className="text-global-4 text-sm sm:text-base leading-tight sm:leading-[22px] font-['Satoshi'] hover:opacity-80 transition-opacity"
-            >
-              Cookie Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>

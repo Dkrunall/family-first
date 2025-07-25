@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Button from '../ui/Button';
+import Link from 'next/link';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,6 +11,7 @@ const Header = () => {
       <div className="flex flex-row justify-between items-center w-full">
         {/* Logo and Brand */}
         <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 flex-shrink-0">
+          <Link className='flex items-center gap-3' href="/">
           <img 
             src="/images/img_people_nearby.png" 
             alt="Family First Logo" 
@@ -18,6 +20,7 @@ const Header = () => {
           <span className="text-white text-base sm:text-lg lg:text-xl xl:text-[27px] font-normal leading-tight lg:leading-[39px] font-['Excon'] whitespace-nowrap">
             Family First
           </span>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
